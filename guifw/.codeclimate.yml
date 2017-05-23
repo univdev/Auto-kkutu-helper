@@ -1,0 +1,23 @@
+engines:
+  radon:
+    enabled: true
+  pep8:
+    enabled: true
+    checks:
+        E501:
+            enabled: false
+        E265:
+            enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+        python:
+          python_version: 3
+ratings:
+  paths:
+  - "**.py"
+
+exclude_paths:
+- "docs/"
+- "examples/"
